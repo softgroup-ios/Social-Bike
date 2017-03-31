@@ -49,12 +49,15 @@ This is a native iOS social-network app, with realtime chats.
 
 ## INSTALLATION
 
-**1.** Install pod files , using 'pod install' in terminal
+**1.** Run `pod install` first
 
-**2.** Your Xcode project should contain `GoogleService-Info.plist`, downloaded from [Firebase console](https://console.firebase.google.com) when you add your app to a Firebase project.<br>
+**2.** Create an account at [Firebase](https://firebase.google.com) and perform some very basic [setup](https://firebase.google.com/docs/ios/setup). Don't forget to configure your Firebase App Database using Firebase console.
+Database should contain appropriate read/write permissions
+
+**3.** Your Xcode project should contain `GoogleService-Info.plist`, downloaded from [Firebase console](https://console.firebase.google.com) when you add your app to a Firebase project.<br>
 Copy `GoogleService-Info.plist` into sample the project folder (`samples/obj-c/GoogleService-Info.plist` or `samples/swift/GoogleService-Info.plist`).
 
-**3.** Update `Info.plist` vk ,facebook and cloudinary configuration values
+**4.** Update `Info.plist` vk ,facebook and cloudinary configuration values
   + `FacebookAppID -> {your-app-id}` (put Facebook App Id)
   + `FacebookDisplayName -> {your-app-display-name}` (put Facebook App display name)
   + `VKAppID -> {your-app-id}` (put VK App Id)
@@ -63,7 +66,7 @@ Copy `GoogleService-Info.plist` into sample the project folder (`samples/obj-c/G
   + `CloudinarySecretKey -> {secret-key}}` (put Cloudinary secret key)
   + `CloudinaryApiKey -> {api-key}` (put Cloudinary api key)
 
-**4.** Update URL Types.<br>
+**5.** Update URL Types.<br>
 Go to `Project Settings -> Info tab -> Url Types` and update values for:
 	+ `REVERSED_CLIENT_ID` (get value from `GoogleService-Info.plist`)
 	+ `fb{your-app-id}` (put Facebook App Id)
