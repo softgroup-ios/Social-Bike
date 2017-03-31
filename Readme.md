@@ -7,16 +7,16 @@
 This is a native iOS social-network app, with realtime chats.
 
 <p align="center">
-<img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" width="250" border="2">
-<img src="https://preview.ibb.co/nJQwva/Simulator_Screen_Shot_Mar_31_2017_4_18_33_PM.png" width="250" border="2">
+<img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" width="250" border="10">
+<img src="https://preview.ibb.co/nJQwva/Simulator_Screen_Shot_Mar_31_2017_4_18_33_PM.png" width="250" border="10">
 </br>
-<img src="https://preview.ibb.co/mpsn1F/Simulator_Screen_Shot_Mar_31_2017_4_54_22_PM.png" width="250" border="2">
-<img src="https://preview.ibb.co/duNLMF/Simulator_Screen_Shot_Mar_31_2017_4_18_51_PM.png" width="250" border="2">
+<img src="https://preview.ibb.co/mpsn1F/Simulator_Screen_Shot_Mar_31_2017_4_54_22_PM.png" width="250" border="10">
+<img src="https://preview.ibb.co/duNLMF/Simulator_Screen_Shot_Mar_31_2017_4_18_51_PM.png" width="250" border="10">
 </br>
-<img src="https://preview.ibb.co/eaaqMF/Simulator_Screen_Shot_Mar_31_2017_4_19_00_PM.png" width="250" border="2">
-<img src="https://preview.ibb.co/geoYaa/Simulator_Screen_Shot_Mar_31_2017_4_19_05_PM.png" width="250" border="2">
+<img src="https://preview.ibb.co/eaaqMF/Simulator_Screen_Shot_Mar_31_2017_4_19_00_PM.png" width="250" border="10">
+<img src="https://preview.ibb.co/geoYaa/Simulator_Screen_Shot_Mar_31_2017_4_19_05_PM.png" width="250" border="10">
 </br>
-<img src="https://preview.ibb.co/c3Xtaa/Simulator_Screen_Shot_Mar_31_2017_4_19_09_PM.png" width="250" border="2">
+<img src="https://preview.ibb.co/c3Xtaa/Simulator_Screen_Shot_Mar_31_2017_4_19_09_PM.png" width="250" border="10">
 </p>
 
 ## FEATURES
