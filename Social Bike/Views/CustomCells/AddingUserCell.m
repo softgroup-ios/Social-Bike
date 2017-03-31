@@ -23,7 +23,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    _photoImagaView.layer.cornerRadius = _photoImagaView.frame.size.width / 2;
+    _photoImagaView.clipsToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

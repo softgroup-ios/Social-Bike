@@ -95,6 +95,8 @@
     
     if(!_isOwnProfile){
         [self setButtonsEnable];
+        [self configurateMainView];
+        [_tableView reloadData];
     }
     [self closeRevealVC];
 }
@@ -133,11 +135,9 @@
             _user = user;
             [self phonesAndMailsUserArrays];
             [self setSocialIDs];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self setButtonsEnable];
-                [self configurateMainView];
-                [_tableView reloadData];
-            });
+            [self setButtonsEnable];
+            [self configurateMainView];
+            [_tableView reloadData];
         }
     }];
 }
@@ -147,11 +147,8 @@
     self.user = user;
     [self phonesAndMailsUserArrays];
     [self setSocialIDs];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self configurateMainView];
-        [_tableView reloadData];
-    });
 }
+
 
 #pragma mark - Setup User Info
 
@@ -258,7 +255,7 @@
 #pragma mark - TableView
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return 3;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -270,9 +267,15 @@
     else
     if(section == 1){
         if(_isEditing){
-            return _userEmails.count+2;
+            return _userEmails.count+1;
         }
             return _userEmails.count;
+    }else
+    if(section == 2){
+        if(_isEditing){
+            return 1;
+        }
+            return 0;
     }else
         return 0;
 }
@@ -292,28 +295,28 @@
             return cell;
         }
     }else
-        if(section == 1){
-            if(indexPath.row == _userEmails.count){
-                AddProfileInfoCell *addInfoCell = [tableView dequeueReusableCellWithIdentifier:@"addUserInfo"];
-                addInfoCell.addInfoLabel.text = @"Add email";
-                return addInfoCell;
-            }else
-            if(indexPath.row == _userEmails.count+1){
-                UITableViewCell *deleteCell = [tableView dequeueReusableCellWithIdentifier:@"deleteProfile"];
-                return deleteCell;
-            }else
-            if(indexPath.row == 0 && _user.email){
-                NewProfileInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"infoCell"];
-                [cell configurateInfoCell:_user.email andSection:NO];
-                return cell;
-            }else
-            {
-                NewProfileInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"infoCell"];
-                [cell configurateInfoCell:[_userEmails objectAtIndex:indexPath.row] andSection:NO];
-                return cell;
-            }
+    if(section == 1){
+        if(indexPath.row == _userEmails.count){
+            AddProfileInfoCell *addInfoCell = [tableView dequeueReusableCellWithIdentifier:@"addUserInfo"];
+            addInfoCell.addInfoLabel.text = @"Add email";
+            return addInfoCell;
+        }else
+        if(indexPath.row == 0 && _user.email){
+            NewProfileInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"infoCell"];
+            [cell configurateInfoCell:_user.email andSection:NO];
+            return cell;
+        }else
+        {
+            NewProfileInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"infoCell"];
+            [cell configurateInfoCell:[_userEmails objectAtIndex:indexPath.row] andSection:NO];
+            return cell;
         }
-    return nil;
+    }else
+    if(section == 2){
+        UITableViewCell *deleteCell = [tableView dequeueReusableCellWithIdentifier:@"deleteProfile"];
+        return deleteCell;
+    }
+        return nil;
 }
 
 #pragma mark - TableView header
@@ -347,11 +350,14 @@
         return @"Phones";
     }
     else
+    if(section == 1)
     {
         if(numOfRows == 0)
             return  @"";
         return @"Emails";
     }
+    else
+        return @"";
 }
 
 -(void)reloadTableViewSections:(NSInteger)section{
@@ -368,7 +374,7 @@
         if(indexPath.row == numOfRows-1)
             return NO;
         if(indexPath.section == 1){
-            if((indexPath.row == 0 && _user.email) || indexPath.row == numOfRows-2)
+            if((indexPath.row == 0 && _user.email) || indexPath.row == numOfRows-1)
                 return NO;
         }
         return YES;
@@ -409,23 +415,21 @@
             if(indexPath.row == _userPhones.count) {
                 [self addInfoCellClick:section];
             }
-        }
-        else
+        }else
         if(section == 1){
             if(indexPath.row == _userEmails.count) {
                 [self addInfoCellClick:section];
             }
-            else
-            if(indexPath.row == _userEmails.count+1) {
-                [[FIRServerManager sharedManager]deleteProfileWithSuccessBlock:^(BOOL status, NSError *error) {
-                    if(status == YES && !error){
-                        [self performSegueWithIdentifier:@"logOut" sender:nil];
-                    }else
-                    {
-                        [self showMessage:error.localizedDescription withTitle:@"Ops"];
-                    }
-                }];
-            }
+        }else
+        if(section == 2){
+            [[FIRServerManager sharedManager]deleteProfileWithSuccessBlock:^(BOOL status, NSError *error) {
+                if(status == YES && !error){
+                    [self performSegueWithIdentifier:@"logOut" sender:nil];
+                }else
+                {
+                    [self showMessage:error.localizedDescription withTitle:@"Ops"];
+                }
+            }];
         }
     }
     else

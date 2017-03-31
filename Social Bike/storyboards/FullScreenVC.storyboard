@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pwn-Mp-V19">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pwn-Mp-V19">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,9 +12,10 @@
         <scene sceneID="wcL-Fv-DdV">
             <objects>
                 <navigationController storyboardIdentifier="FullScreenVC" id="pwn-Mp-V19" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="O3q-RQ-RYH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="O3q-RQ-RYH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.43137254899999999" green="0.69411764710000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="Ykt-Ac-orE" kind="relationship" relationship="rootViewController" id="Z9M-A3-sVh"/>
@@ -24,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="1453" y="-812"/>
         </scene>
-        <!--Name of breed-->
+        <!--Full ScreenVC-->
         <scene sceneID="uqq-VZ-5n2">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ykt-Ac-orE" customClass="FullScreenVC" sceneMemberID="viewController">
@@ -33,16 +34,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Xc9-d2-4gt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gsu-vB-19x">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="Gh8-6H-6ea">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="Wmq-Y3-RDP">
                                         <rect key="frame" x="150" y="264" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Wmq-Y3-RDP" firstAttribute="top" secondItem="Gh8-6H-6ea" secondAttribute="top" constant="264" id="4rb-hy-QKN"/>
                                     <constraint firstItem="Wmq-Y3-RDP" firstAttribute="trailing" secondItem="Gh8-6H-6ea" secondAttribute="trailing" id="5hF-3t-QJF" userLabel="Horizontal Space - (-1) - Scroll View - Image View"/>
@@ -51,7 +54,6 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Xc9-d2-4gt" firstAttribute="top" secondItem="Gh8-6H-6ea" secondAttribute="bottom" id="7rv-Xl-tYX"/>
                             <constraint firstItem="Gh8-6H-6ea" firstAttribute="top" secondItem="epI-mZ-N94" secondAttribute="bottom" id="D0d-rJ-AP9"/>
@@ -59,15 +61,15 @@
                             <constraint firstAttribute="trailing" secondItem="Gh8-6H-6ea" secondAttribute="trailing" id="iTe-q9-kWi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Name of breed" id="aBJ-mN-rLn">
+                    <navigationItem key="navigationItem" id="aBJ-mN-rLn">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3qw-sz-tyE">
-                            <color key="tintColor" red="0.2784313725" green="0.2784313725" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cancelFullImage:" destination="Ykt-Ac-orE" id="gnY-6Z-mRH"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="iUK-0E-hhQ">
-                            <color key="tintColor" red="0.2784313725" green="0.2784313725" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="saveToGallery:" destination="Ykt-Ac-orE" id="mxG-kh-L9v"/>
                             </connections>

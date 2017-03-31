@@ -23,7 +23,7 @@
 
 + (BOOL)nameValidation:(NSString*)name {
     
-    return name.length >= 2;
+    return name.length >= 2 && name.length <= 10;
 }
 
 + (BOOL)phoneValidator:(NSString *)phoneNumber
