@@ -7,16 +7,16 @@
 This is a native iOS social-network app, with realtime chats.
 
 <p align="center">
-<img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" width="250" border="5">
-<img src="https://preview.ibb.co/nJQwva/Simulator_Screen_Shot_Mar_31_2017_4_18_33_PM.png" width="250" border="5">
+<img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" style="border:0px;margin:0px;float:left;width:250px;">
+<img src="https://preview.ibb.co/nJQwva/Simulator_Screen_Shot_Mar_31_2017_4_18_33_PM.png" style="border:0px;margin:0px;float:left;width:250px;">
 </br>
-<img src="https://preview.ibb.co/mpsn1F/Simulator_Screen_Shot_Mar_31_2017_4_54_22_PM.png" width="250" border="5">
-<img src="https://preview.ibb.co/duNLMF/Simulator_Screen_Shot_Mar_31_2017_4_18_51_PM.png" width="250" border="5">
+<img src="https://preview.ibb.co/mpsn1F/Simulator_Screen_Shot_Mar_31_2017_4_54_22_PM.png" style="border:0px;margin:0px;float:left;width:250px;">
+<img src="https://preview.ibb.co/duNLMF/Simulator_Screen_Shot_Mar_31_2017_4_18_51_PM.png" style="border:0px;margin:0px;float:left;width:250px;">
 </br>
-<img src="https://preview.ibb.co/eaaqMF/Simulator_Screen_Shot_Mar_31_2017_4_19_00_PM.png" width="250" border="5">
-<img src="https://preview.ibb.co/geoYaa/Simulator_Screen_Shot_Mar_31_2017_4_19_05_PM.png" width="250" border="5">
+<img src="https://preview.ibb.co/eaaqMF/Simulator_Screen_Shot_Mar_31_2017_4_19_00_PM.png" style="border:0px;margin:0px;float:left;width:250px;">
+<img src="https://preview.ibb.co/geoYaa/Simulator_Screen_Shot_Mar_31_2017_4_19_05_PM.png" style="border:0px;margin:0px;float:left;width:250px;">
 </br>
-<img src="https://preview.ibb.co/c3Xtaa/Simulator_Screen_Shot_Mar_31_2017_4_19_09_PM.png" width="250" border="5">
+<img src="https://preview.ibb.co/c3Xtaa/Simulator_Screen_Shot_Mar_31_2017_4_19_09_PM.png" style="border:0px;margin:0px;float:left;width:250px;">
 </p>
 
 ## FEATURES
@@ -49,7 +49,7 @@ This is a native iOS social-network app, with realtime chats.
 
 ## INSTALLATION
 
-**1.** Run `pod install` first
+**1.** Run `pod install` first (the CocoaPods Frameworks and Libraries are not included in the repo). If you haven't used CocoaPods before, you can get started [here](https://guides.cocoapods.org/using/getting-started.html). You might prefer to use the [CocoaPods app](https://cocoapods.org/app) instead of the command line tool.
 
 **2.** Create an account at [Firebase](https://firebase.google.com) and perform some very basic [setup](https://firebase.google.com/docs/ios/setup). Don't forget to configure your Firebase App Database using Firebase console.
 Database should contain appropriate read/write permissions
