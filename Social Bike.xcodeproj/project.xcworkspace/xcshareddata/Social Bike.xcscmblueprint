@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "075E25D543663DDBF0890FB51B15EE435272C01B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "01529694042D8C98B30DC19F4D4370A306884FE4" : 9223372036854775807,
+    "075E25D543663DDBF0890FB51B15EE435272C01B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "724045C1-FCB9-4FCB-A274-6FD0E3FA4837",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "01529694042D8C98B30DC19F4D4370A306884FE4" : "SWRevealViewController\/",
+    "075E25D543663DDBF0890FB51B15EE435272C01B" : "social-bike\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Social Bike",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Social Bike.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/John-Lluch\/SWRevealViewController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01529694042D8C98B30DC19F4D4370A306884FE4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/antik22\/social-bike.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "075E25D543663DDBF0890FB51B15EE435272C01B"
+    }
+  ]
+}
