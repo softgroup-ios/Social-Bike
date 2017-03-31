@@ -64,9 +64,46 @@
 }
 @end
 
+@implementation JSQMessagesTimestampFormatter (TimestampOnly)
+- (NSAttributedString *)attributedTimestampOnlyDayForDate:(NSDate *)date {
+    if (!date) {
+        return nil;
+    }
+    
+    NSString *relativeDate = [self relativeDateForDate:date];
+    
+    UIColor *color = [UIColor lightGrayColor];
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    paragraphStyle.alignment = NSTextAlignmentCenter;
+    
+    NSDictionary *attrib = @{ NSFontAttributeName : [UIFont boldSystemFontOfSize:16.0f],
+                              NSForegroundColorAttributeName : color,
+                              NSParagraphStyleAttributeName : paragraphStyle };
+    
+    NSMutableAttributedString *timestamp = [[NSMutableAttributedString alloc] initWithString:relativeDate
+                                                                                  attributes:attrib];
+    
+    return [[NSAttributedString alloc] initWithAttributedString:timestamp];
+}
 
-
-
+- (NSAttributedString *)attributedTimestampOnlyTimeForDate:(NSDate *)date {
+    if (!date) {
+        return nil;
+    }
+    
+    NSString *time = [self timeForDate:date];
+    
+    NSMutableAttributedString *timestamp = [[NSMutableAttributedString alloc] init];
+    
+    [timestamp appendAttributedString:[[NSAttributedString alloc] initWithString:@"   "]];
+    
+    [timestamp appendAttributedString:[[NSAttributedString alloc] initWithString:time
+                                                                      attributes:self.timeTextAttributes]];
+    
+    return [[NSAttributedString alloc] initWithAttributedString:timestamp];
+}
+@end
 
 
 @interface MessagesVC () <JSQMessagesCollectionViewDataSource, JSQMessagesCollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, UINavigationControllerDelegate, JSQMessagesComposerTextViewPasteDelegate, UpdateChatDelegate>
@@ -285,6 +322,7 @@
             [self loadAvatarFromUserID:msg.senderId];
         }
     }
+    
     self.collectionView.collectionViewLayout.isInsertingCellsToTop = YES;
     self.collectionView.collectionViewLayout.contentSizeWhenInsertingToTop = self.collectionView.collectionViewLayout.collectionViewContentSize;
     [self.collectionView reloadData];

@@ -14,6 +14,23 @@
 #import "UIColor+JSQMessages.h"
 
 
+@implementation JSQMessagesMediaPlaceholderView (ActivityIndicator)
+
++ (instancetype)viewWithAlwaysActivityIndicator {
+    UIColor *lightGrayColor = [UIColor jsq_messageBubbleLightGrayColor];
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    spinner.color = [lightGrayColor jsq_colorByDarkeningColorWithValue:0.4f];
+    spinner.hidesWhenStopped = NO;
+    
+    JSQMessagesMediaPlaceholderView *view = [[JSQMessagesMediaPlaceholderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 200.0f, 120.0f)
+                                                                                   backgroundColor:lightGrayColor
+                                                                             activityIndicatorView:spinner];
+    return view;
+}
+
+@end
+
+
 @implementation AsyncPhotoMediaItem
 
 - (instancetype)init
@@ -48,10 +65,11 @@
     }
     return self;
 }
+
 #pragma mark - JSQMessageMediaData protocol
-- (UIView *)mediaView
-{
+- (UIView *)mediaView {
     return self.asyncImageView;
 }
+
 
 @end

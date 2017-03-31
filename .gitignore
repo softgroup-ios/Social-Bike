@@ -64,3 +64,4 @@ iOSInjectionProject/
 
 #pods
 Pods
+!Pods/JSQMessagesViewController/
