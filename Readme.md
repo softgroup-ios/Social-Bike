@@ -8,7 +8,7 @@ This is a native iOS social-network app, with realtime chats, based on Firebase.
 
 <p align="center">
 <img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" width="250">
-<img src="https://preview.ibb.co/nJQwva/Simulator_Screen_Shot_Mar_31_2017_4_18_33_PM.png" width="250" style="margin:0px 50px">
+<p><img src="https://preview.ibb.co/nJQwva/Simulator_Screen_Shot_Mar_31_2017_4_18_33_PM.png" width="250" style="margin:0px 50px"></p>
 </br>
 <img src="https://preview.ibb.co/mpsn1F/Simulator_Screen_Shot_Mar_31_2017_4_54_22_PM.png" width="250">
 <img src="https://preview.ibb.co/duNLMF/Simulator_Screen_Shot_Mar_31_2017_4_18_51_PM.png" width="250" style="margin:0px 50px">
