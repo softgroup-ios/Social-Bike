@@ -57,9 +57,15 @@ Database should contain appropriate read/write permissions
 **3.** Your Xcode project should contain `GoogleService-Info.plist`, downloaded from [Firebase console](https://console.firebase.google.com) when you add your app to a Firebase project.<br>
 Copy `GoogleService-Info.plist` into sample the project folder (`samples/obj-c/GoogleService-Info.plist` or `samples/swift/GoogleService-Info.plist`).
 
-**OPTIONAL:**
+**4.** Update URL Types.<br>
+Go to `Project Settings -> Info tab -> Url Types` and update values for:
+	+ `REVERSED_CLIENT_ID` (get value from `GoogleService-Info.plist`) </br>
+	+ `fb{your-app-id}` (put Facebook App Id) </br>
+	+ `vk{your-app-id}` (put VK App Id)</br>
+	
+**OPTIONAL:** (For FB/VK functionality)
 </br>
-**4.** Update `Info.plist` vk ,facebook and cloudinary configuration values
+**5.** Update `Info.plist` vk ,facebook and cloudinary configuration values
   + `FacebookAppID -> {your-app-id}` (put Facebook App Id)
   + `FacebookDisplayName -> {your-app-display-name}` (put Facebook App display name)
   + `VKAppID -> {your-app-id}` (put VK App Id)
@@ -68,11 +74,7 @@ Copy `GoogleService-Info.plist` into sample the project folder (`samples/obj-c/G
   + `CloudinarySecretKey -> {secret-key}}` (put Cloudinary secret key)
   + `CloudinaryApiKey -> {api-key}` (put Cloudinary api key)
 
-**5.** Update URL Types.<br>
-Go to `Project Settings -> Info tab -> Url Types` and update values for:
-	+ `REVERSED_CLIENT_ID` (get value from `GoogleService-Info.plist`)
-	+ `fb{your-app-id}` (put Facebook App Id)
-	+ `vk{your-app-id}` (put VK App Id)
+
 
 ## LICENSE
 
