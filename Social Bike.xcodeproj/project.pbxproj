@@ -499,7 +499,7 @@
 				TargetAttributes = {
 					8455C32F1E379FD800140822 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = LE3554D3R2;
+						DevelopmentTeam = X9J65D7SNF;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -763,7 +763,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Social Bike/Social Bike.entitlements";
-				DEVELOPMENT_TEAM = LE3554D3R2;
+				DEVELOPMENT_TEAM = X9J65D7SNF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -771,7 +771,7 @@
 				INFOPLIST_FILE = "Social Bike/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.softgroup.Social-Bike-ttest";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softgroup.Social-Bike-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -783,7 +783,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Social Bike/Social Bike.entitlements";
-				DEVELOPMENT_TEAM = LE3554D3R2;
+				DEVELOPMENT_TEAM = X9J65D7SNF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -791,7 +791,7 @@
 				INFOPLIST_FILE = "Social Bike/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.softgroup.Social-Bike-ttest";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.softgroup.Social-Bike-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
