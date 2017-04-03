@@ -18,6 +18,13 @@ This is a native iOS social-network app, with realtime chats, based on Firebase.
 <img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" width="250">
 </div>
 
+## PREVIEW
+<p align="center">
+<img src="ReadmeResources/Profile.gif" height="500"/>
+<img src="ReadmeResources/Messages.gif" height="500"/>
+<img src="ReadmeResources/Profile.gif" height="500"/>
+</p>
+
 ## FEATURES
 
 - Using FireBase and Cloundinary services
