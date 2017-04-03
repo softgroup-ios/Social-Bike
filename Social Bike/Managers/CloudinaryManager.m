@@ -46,10 +46,18 @@
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
     
     [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        UIImage *image = [UIImage imageWithData:data];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            completionBlock(image);
-        });
+        if (data && !error) {
+            UIImage *image = [UIImage imageWithData:data];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completionBlock(image);
+            });
+        }
+        else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completionBlock(nil);
+            });
+        }
+        
     }] resume];
 }
 
@@ -97,9 +105,15 @@
 
     [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
+        if (!data || error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completionBlock(nil, error);
+            });
+            return;
+        }
         NSError *errorWithDeser;
         NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&errorWithDeser];
-        if (!error && data && !errorWithDeser) {
+        if (!errorWithDeser) {
             NSString *url = [jsonResponse objectForKey:@"secure_url"];
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionBlock(url, nil);
@@ -107,7 +121,7 @@
         }
         else {
             dispatch_async(dispatch_get_main_queue(), ^{
-                completionBlock(nil, error);
+                completionBlock(nil, errorWithDeser);
             });
         }
     }] resume];
