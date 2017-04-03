@@ -58,6 +58,7 @@ Database should contain appropriate read/write permissions
 Copy `GoogleService-Info.plist` into sample the project folder (`samples/obj-c/GoogleService-Info.plist` or `samples/swift/GoogleService-Info.plist`).
 
 **OPTIONAL:**
+</br>
 **4.** Update `Info.plist` vk ,facebook and cloudinary configuration values
   + `FacebookAppID -> {your-app-id}` (put Facebook App Id)
   + `FacebookDisplayName -> {your-app-display-name}` (put Facebook App display name)
