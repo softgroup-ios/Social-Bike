@@ -65,18 +65,18 @@ Database should contain appropriate read/write permissions
 Copy `GoogleService-Info.plist` into sample the project folder (`samples/obj-c/GoogleService-Info.plist` or `samples/swift/GoogleService-Info.plist`).
 
 **4.** Update URL Types.<br>
-Go to `Project Settings -> Info tab -> Url Types` and update values for:
+Go to `Project Settings -> Info tab -> Url Types` and update values for: </br>
 	+ `REVERSED_CLIENT_ID` (get value from `GoogleService-Info.plist`) </br>
 	
-**OPTIONAL:** For FB/VK and cloudinary(upload/download images) functionality
+**OPTIONAL:** For FB/VK and cloudinary(upload/download images) functionality </br>
+</br>
 	+ `fb{your-app-id}` (put Facebook App Id) </br>
 	+ `vk{your-app-id}` (put VK App Id)</br>
 </br>
 **5.** Update `Info.plist` vk ,facebook and cloudinary configuration values
-  + `FacebookAppID -> {your-app-id}` (put Facebook App Id)
-  + `FacebookDisplayName -> {your-app-display-name}` (put Facebook App display name)
-  + `VKAppID -> {your-app-id}` (put VK App Id)
- </br>
+  + `FacebookAppID -> {your-app-id}` (put Facebook App Id)</br>
+  + `FacebookDisplayName -> {your-app-display-name}` (put Facebook App display name)</br>
+  + `VKAppID -> {your-app-id}` (put VK App Id) </br>
   + `CloudinaryName -> {storage-name}` (put Cloudinary storage name)
   + `CloudinarySecretKey -> {secret-key}}` (put Cloudinary secret key)
   + `CloudinaryApiKey -> {api-key}` (put Cloudinary api key)
