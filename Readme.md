@@ -18,13 +18,6 @@ This is a native iOS social-network app, with realtime chats, based on Firebase.
 <img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" width="250">
 </div>
 
-## PREVIEW
-<p align="center">
-<img src="readmeResource/Profile.gif" height="500"/>
-<img src="readmeResource/Messages.gif" height="500"/>
-<img src="readmeResource/Profile.gif" height="500"/>
-</p>
-
 ## FEATURES
 
 - Using FireBase and Cloundinary services
@@ -53,6 +46,14 @@ This is a native iOS social-network app, with realtime chats, based on Firebase.
 - Rechability
 - SWRevealViewController
 
+## PREVIEW
+
+<p align="center">
+<img src="readmeResource/Profile.gif" height="500"/>
+<img src="readmeResource/Messages.gif" height="500"/>
+<img src="readmeResource/FriendPage.gif" height="500"/>
+</p>
+
 ## INSTALLATION
 
 **1.** Run `pod install` first (the CocoaPods Frameworks and Libraries are not included in the repo). If you haven't used CocoaPods before, you can get started [here](https://guides.cocoapods.org/using/getting-started.html). You might prefer to use the [CocoaPods app](https://cocoapods.org/app) instead of the command line tool.
@@ -79,7 +80,6 @@ Go to `Project Settings -> Info tab -> Url Types` and update values for:
   + `CloudinaryName -> {storage-name}` (put Cloudinary storage name)
   + `CloudinarySecretKey -> {secret-key}}` (put Cloudinary secret key)
   + `CloudinaryApiKey -> {api-key}` (put Cloudinary api key)
-
 
 
 ## LICENSE
