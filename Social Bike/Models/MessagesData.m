@@ -363,10 +363,12 @@
     
     if (message.isMediaMessage) {
         [message createDictionaryFromMediaMessage:key completionBlock:^(NSDictionary *dict) {
-            NSDictionary *childUpdates = @{[NSString stringWithFormat:@"/%@/",key]: dict};
-            
-            [self.currentChat updateChildValues:childUpdates];
-            [self.chat updateLastMessage:dict forUser:self.updateChatDelegate.myID];
+            if (dict) {
+                NSDictionary *childUpdates = @{[NSString stringWithFormat:@"/%@/",key]: dict};
+                
+                [self.currentChat updateChildValues:childUpdates];
+                [self.chat updateLastMessage:dict forUser:self.updateChatDelegate.myID];
+            }
         }];
     }
     else {

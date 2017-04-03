@@ -352,7 +352,7 @@
                         <outlet property="signInButton" destination="8wv-TW-9Oj" id="4kC-kc-rZe"/>
                         <outlet property="signUpButton" destination="RT2-y6-1Nh" id="aRu-9a-rDk"/>
                         <outlet property="viewForCloseScreen" destination="nAD-ON-fys" id="y3R-v6-RMH"/>
-                        <segue destination="PTe-YA-cAk" kind="show" identifier="Registeration" id="kOM-o3-co3"/>
+                        <segue destination="PTe-YA-cAk" kind="show" identifier="Registration" id="kOM-o3-co3"/>
                         <segue destination="2mG-JT-3zk" kind="presentation" identifier="afterAuthorization" modalTransitionStyle="crossDissolve" id="cKg-0S-mtw"/>
                     </connections>
                 </viewController>
