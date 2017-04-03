@@ -4,7 +4,7 @@
 )](https://developer.apple.com/iphone/index.action)
 [![ObjectiveC](https://img.shields.io/badge/Objective--C-2.0-blue.svg)](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)
 
-This is a native iOS social-network app, with realtime chats.
+This is a native iOS social-network app, with realtime chats, based on Firebase.
 
 <p align="center">
 <img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" width="250">
@@ -14,7 +14,7 @@ This is a native iOS social-network app, with realtime chats.
 <img src="https://preview.ibb.co/duNLMF/Simulator_Screen_Shot_Mar_31_2017_4_18_51_PM.png" width="250">
 </br>
 <img src="https://preview.ibb.co/eaaqMF/Simulator_Screen_Shot_Mar_31_2017_4_19_00_PM.png" width="250">
-<img src="https://preview.ibb.co/geoYaa/Simulator_Screen_Shot_Mar_31_2017_4_19_05_PM.png" width="250">
+<img src="https://preview.ibb.co/jDrwfa/Simulator_Screen_Shot_Apr_3_2017_11_09_48_AM.png" width="250">
 </br>
 <img src="https://preview.ibb.co/c3Xtaa/Simulator_Screen_Shot_Mar_31_2017_4_19_09_PM.png" width="250">
 </p>
@@ -57,11 +57,12 @@ Database should contain appropriate read/write permissions
 **3.** Your Xcode project should contain `GoogleService-Info.plist`, downloaded from [Firebase console](https://console.firebase.google.com) when you add your app to a Firebase project.<br>
 Copy `GoogleService-Info.plist` into sample the project folder (`samples/obj-c/GoogleService-Info.plist` or `samples/swift/GoogleService-Info.plist`).
 
+**OPTIONAL:**
 **4.** Update `Info.plist` vk ,facebook and cloudinary configuration values
   + `FacebookAppID -> {your-app-id}` (put Facebook App Id)
   + `FacebookDisplayName -> {your-app-display-name}` (put Facebook App display name)
   + `VKAppID -> {your-app-id}` (put VK App Id)
-  OPTIONAL (IF U WANT TO USE IMAGES)
+ </br> OPTIONAL (IF U WANT TO USE IMAGES)
   + `CloudinaryName -> {storage-name}` (put Cloudinary storage name)
   + `CloudinarySecretKey -> {secret-key}}` (put Cloudinary secret key)
   + `CloudinaryApiKey -> {api-key}` (put Cloudinary api key)
