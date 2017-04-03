@@ -20,9 +20,9 @@ This is a native iOS social-network app, with realtime chats, based on Firebase.
 
 ## PREVIEW
 <p align="center">
-<img src="ReadmeResources/Profile.gif" height="500"/>
-<img src="ReadmeResources/Messages.gif" height="500"/>
-<img src="ReadmeResources/Profile.gif" height="500"/>
+<img src="readmeResource/Profile.gif" height="500"/>
+<img src="readmeResource/Messages.gif" height="500"/>
+<img src="readmeResource/Profile.gif" height="500"/>
 </p>
 
 ## FEATURES
