@@ -7,16 +7,16 @@
 This is a native iOS social-network app, with realtime chats, based on Firebase.
 
 <p align="center">
-<img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" width="250"  style="margin:20px 0px"> 
-<img src="https://preview.ibb.co/nJQwva/Simulator_Screen_Shot_Mar_31_2017_4_18_33_PM.png" width="250"  style="margin:20px 20px">
+<img src="https://preview.ibb.co/daA1Tv/Simulator_Screen_Shot_Mar_31_2017_4_19_13_PM.png" width="250"  style="margin:20px 0px" align="middle"> 
+<img src="https://preview.ibb.co/nJQwva/Simulator_Screen_Shot_Mar_31_2017_4_18_33_PM.png" width="250"  style="margin:20px 20px" align="middle">
 </br>
-<img src="https://preview.ibb.co/mpsn1F/Simulator_Screen_Shot_Mar_31_2017_4_54_22_PM.png" width="250" style="margin:20px 0px">
-<img src="https://preview.ibb.co/duNLMF/Simulator_Screen_Shot_Mar_31_2017_4_18_51_PM.png" width="250" style="margin:20px 20px">
+<img src="https://preview.ibb.co/mpsn1F/Simulator_Screen_Shot_Mar_31_2017_4_54_22_PM.png" width="250" style="margin:20px 0px" align="middle">
+<img src="https://preview.ibb.co/duNLMF/Simulator_Screen_Shot_Mar_31_2017_4_18_51_PM.png" width="250" style="margin:20px 20px" align="middle">
 </br>
-<img src="https://preview.ibb.co/eaaqMF/Simulator_Screen_Shot_Mar_31_2017_4_19_00_PM.png" width="250" style="margin:20px 0px">
-<img src="https://preview.ibb.co/jDrwfa/Simulator_Screen_Shot_Apr_3_2017_11_09_48_AM.png" width="250" style="margin:20px 20px">
+<img src="https://preview.ibb.co/eaaqMF/Simulator_Screen_Shot_Mar_31_2017_4_19_00_PM.png" width="250" style="margin:20px 0px" align="middle">
+<img src="https://preview.ibb.co/jDrwfa/Simulator_Screen_Shot_Apr_3_2017_11_09_48_AM.png" width="250" style="margin:20px 20px" align="middle">
 </br>
-<img src="https://preview.ibb.co/c3Xtaa/Simulator_Screen_Shot_Mar_31_2017_4_19_09_PM.png" width="250" style="margin:20px 0px">
+<img src="https://preview.ibb.co/c3Xtaa/Simulator_Screen_Shot_Mar_31_2017_4_19_09_PM.png" width="250" style="margin:20px 0px" align="middle">
 </p>
 
 ## FEATURES
